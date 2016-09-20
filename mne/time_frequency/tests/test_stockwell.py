@@ -35,7 +35,7 @@ def test_stockwell_check_input():
 
         assert_equal(x_in.shape, (2, 10, 128))
         assert_equal(n_fft, 128)
-        assert_equal(zero_pad, 1)
+        assert_equal(zero_pad, 128 - last_dim)
 
 
 def test_stockwell_st_power_itc():
